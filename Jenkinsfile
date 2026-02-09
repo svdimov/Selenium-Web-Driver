@@ -20,6 +20,7 @@ pipeline {
         }
 
         stage("Run tests") {
+            failFast true 
             parallel {
                 stage("Run tests for Project 1") {
                     steps {
